@@ -14,7 +14,8 @@ namespace WindowsProjet
             b.Size = new Size(100, 50);
             b.Location = new Point(100, 100); 
             this.Controls.Add(b);
-            b.Click += delegate { 
+            b.Click += ( sender, e) =>
+            {
                 MessageBox.Show("Button clicked!");
             };
         }
